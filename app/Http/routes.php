@@ -15,6 +15,16 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+//Route::resource('user','UserController');
+Route::get('/login', "UserController@login");
+
+Route::get('/test', function(){
+    return view('register2');
+});
+
+
+
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes
